@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7751759564417956917}
   - component: {fileID: 6124691279986325743}
   - component: {fileID: 1414268508819756066}
-  - component: {fileID: -8413417152701214803}
+  - component: {fileID: 1164213271854516704}
   m_Layer: 0
   m_Name: brick
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4010122155347391945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -12, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-8413417152701214803
+--- !u!114 &1164213271854516704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,4 +153,5 @@ MonoBehaviour:
   - {fileID: -1664377164055476167, guid: 5aa2f1dbe5e71e34b9f45036b527b425, type: 3}
   - {fileID: 8353046955354455417, guid: 3a7a205007ae76845a6051a874d46b74, type: 3}
   - {fileID: -2337506537024244948, guid: 29a3846de05a2b649aa5ebf5b3f29e89, type: 3}
+  points: 100
   unbreakable: 0

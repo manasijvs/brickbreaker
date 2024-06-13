@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class brick : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer { get; private set; }
-    public Sprite[] states;
+    public SpriteRenderer spriteRenderer { get; private set; }//refer to the spriterender component in the gameobject
+    public Sprite[] states;//array of sprites. to represent changes in bricks according to its health
     public int health { get; private set; }
     public int points = 100;
     public bool unbreakable;
@@ -17,8 +17,8 @@ public class brick : MonoBehaviour
     {
         if (!this.unbreakable)
         {
-            this.health = this.states.Length;
-            this.spriteRenderer.sprite = this.states[this.health - 1];
+            this.health = this.states.Length;//health=elements in states array
+            this.spriteRenderer.sprite = this.states[this.health - 1]; 
         }
     }
 
@@ -36,7 +36,7 @@ public class brick : MonoBehaviour
         }
         else 
         {
-            this. spriteRenderer. sprite = this.states[this.health - 1];
+            this. spriteRenderer.sprite = this.states[this.health - 1];
         }
         FindAnyObjectByType<GameManager>().Hit(this);
 
@@ -44,7 +44,8 @@ public class brick : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Ball") {
+        if (collision.gameObject.name == "Ball") 
+        {
             Hit();
         }
     }

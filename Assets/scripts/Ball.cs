@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour
 
     public void ResetBall()
     {
-        this.transform.position = Vector2.zero;//position of object in 3d space. vector2.zero->same as vector2(0,0)
+        //this.transform.position = Vector2.zero;//position of object in 3d space. vector2.zero->same as vector2(0,0)
         this.rigidbody.velocity = Vector2.zero;
         Invoke(nameof(SetRandomTrajectory), 1f);//call the fn byname with a delay of 1sec
     }
